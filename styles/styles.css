@@ -125,6 +125,7 @@ a {
 
 .icon-mail {
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 .icon-tel {
@@ -394,6 +395,7 @@ address a {
 
 .social-link-f:hover, .social-link-f:focus {
     background-color: var(--brand-color-blue);
+    fill: var(--brand-color-white);
 }
 
 /* Portfolio */
