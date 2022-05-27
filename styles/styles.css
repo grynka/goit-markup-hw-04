@@ -9,16 +9,6 @@
     --margin-li: 30px;
 }
 
-html {
-    box-sizing: border-box;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: inherit;
-    }
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
@@ -31,6 +21,10 @@ h1 {
     font-family: 'Roboto', sans-serif;
     line-height: 1.3637;
     letter-spacing: 0.06em;
+}
+
+h2 {
+    margin: 0;
 }
 
 .title-main {
@@ -139,13 +133,17 @@ a {
 }
 
 .banner {
-    background-color: var(--brand-color-background);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
     padding: 180px 450px;
     text-align: center;
     color: var(--brand-color-white);
     font-size: 44px;
     font-weight: 700;
-}
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 
 .banner h1 {
     margin: 29px 0;
@@ -167,6 +165,7 @@ button {
     font-weight: 700;
     line-height: 1.875;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    position: relative;
 }
 
 .banner button:hover {
@@ -231,7 +230,6 @@ button {
     margin: 0 auto;
     text-align: center;
     background-color: #F5F4FA;
-    padding: 94px 0;
 }
 
 .team ul {
@@ -258,6 +256,35 @@ button {
     color: var(--brand-color-link);
     line-height: 1.172;
     margin: 0;
+}
+
+.clients {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: calc(-1 * var(--margin-li));
+    margin-top: calc(-1 * var(--margin-li));
+}
+
+.client {
+      flex-basis: calc(100% / 6 - var(--margin-li));
+    margin-left: var(--margin-li);
+        text-align: center;
+    padding: 16px 0;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.client:hover, .client:focus {
+    border-color: #2196F3;
+}
+
+.client-icon {
+fill: #AFB1B8;
+}
+
+.client-icon:hover, .client-icon:focus {
+    fill: #2196F3;
 }
 
 .footer {
