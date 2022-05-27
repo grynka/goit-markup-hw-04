@@ -101,6 +101,7 @@ ul {
 
 a:hover, a:focus {
     color: var(--brand-color-blue);
+    fill: var(--brand-color-blue);
 }
 
 .contacts {
@@ -109,17 +110,27 @@ a:hover, a:focus {
 
 .mail {
     color: var(--brand-color-link);
+    fill: var(--brand-color-link);
 }
 
 .tel {
     margin: 0;
     color: var(--brand-color-link);
+    fill: var(--brand-color-link);
 }
 
 a {
     color: var(--brand-color-link);
 }
 
+.icon-mail {
+    margin-right: 10px;
+}
+
+.icon-tel {
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 .container {
     width: 1200px;
@@ -232,7 +243,7 @@ button {
     background-color: #F5F4FA;
 }
 
-.team ul {
+.team-items {
     margin-left: calc(-1 * var(--margin-li));
 }
 
@@ -258,7 +269,35 @@ button {
     margin: 0;
 }
 
-.clients {
+.link-icon {
+    padding: 12px;
+}
+
+.social-list {
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-link {
+    display: flex;
+    fill: #AFB1B8;
+    border-radius: 50%;
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item .last {
+    margin-right: 0;
+}
+
+.social-link:hover, .social-link:focus {
+    fill: var(--brand-color-white);
+    background-color: var(--brand-color-blue);
+}
+
+.clients-logo {
     flex-wrap: wrap;
     display: flex;
     margin-left: calc(-1 * var(--margin-li));
@@ -269,22 +308,23 @@ button {
       flex-basis: calc(100% / 6 - var(--margin-li));
     margin-left: var(--margin-li);
         text-align: center;
-    padding: 16px 0;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    cursor: pointer;
+    display: flex;
 }
 
-.client:hover, .client:focus {
-    border-color: #2196F3;
+.client-link {
+    outline: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
 }
 
 .client-icon {
-fill: #AFB1B8;
+padding: 16px 32px;
+display: block;
 }
 
-.client-icon:hover, .client-icon:focus {
+.client-link:hover, .clien-link:focus {
     fill: #2196F3;
+    outline-color: #2196F3;
 }
 
 .footer {
@@ -292,6 +332,10 @@ fill: #AFB1B8;
     padding: 60px 0;
 }
 
+.block-left {
+    margin-right: 70px;
+    display: inline-block;
+}
 
 a.logo-footer {
     color: var(--brand-color-white);
@@ -302,16 +346,17 @@ a.logo-footer {
     padding-bottom: 20px;
     line-height: 1.174;
     display: block;
+    width: max-content;
 }
 
 address {
-    display: flow-root;
+    display: inline-block;
     color: var(--brand-color-white);
     font-style: normal;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.714;
-}
+    }
 
 address p {
     margin: 0 0 9px 0;
@@ -326,6 +371,29 @@ address a {
 
 .last {
     margin-bottom: 0;
+}
+
+.social-link-f {
+    display: flex;
+    fill: var(--brand-color-white);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.s-links {
+    color: var(--brand-color-white);
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.s-links > p {
+    margin: 12px 0 20px 0;
+}
+
+.social-link-f:hover, .social-link-f:focus {
+    background-color: var(--brand-color-blue);
 }
 
 /* Portfolio */
@@ -373,6 +441,11 @@ address a {
     flex-basis: calc(100% /3 - var(--margin-li));
     margin-left: var(--margin-li);
     margin-top: var(--margin-li);
+}
+
+.project:hover, .project:focus {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
 }
 
 .portfolio {
