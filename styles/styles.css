@@ -152,17 +152,19 @@ a {
     url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
-  /*background-size: cover;*/
-  padding: 180px 450px;
+  max-width: 1600px;
+  background-size: cover;
+  padding: 200px 450px;
   text-align: center;
   color: var(--brand-color-white);
   font-size: 44px;
   font-weight: 700;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 0 auto;
 }
 
 .banner h1 {
-  margin: 29px 0;
+  margin: 10px 0;
 }
 
 button {
@@ -211,13 +213,17 @@ button {
 }
 
 .quality-box {
-  background-color: rgba(245, 244, 250, 1);
-  border-radius: 4px;
-  margin-bottom: 30px;
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quality-icon {
-  padding: 25px 100px;
+
 }
 
 .quality h3 {
@@ -285,7 +291,7 @@ button {
 }
 
 .link-icon {
-  padding: 12px;
+
 }
 
 .social-list {
@@ -297,6 +303,7 @@ button {
   display: flex;
   fill: #afb1b8;
   border-radius: 50%;
+  padding: 12px;
 }
 
 .social-item {
@@ -317,7 +324,6 @@ button {
   flex-wrap: wrap;
   display: flex;
   margin-left: calc(-1 * var(--margin-li));
-  margin-top: calc(-1 * var(--margin-li));
 }
 
 .client {
@@ -331,10 +337,11 @@ button {
   outline: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  padding: 16px 32px;
 }
 
 .client-icon {
-  padding: 16px 32px;
+
   display: block;
 }
 
@@ -395,6 +402,7 @@ address a {
   fill: var(--brand-color-white);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
 }
 
 .s-links {
@@ -402,7 +410,10 @@ address a {
   text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
-}
+  line-height: 1.17em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  }
 
 .s-links > p {
   margin: 12px 0 20px 0;
@@ -462,11 +473,18 @@ button:focus {
   margin-top: var(--margin-li);
 }
 
-.project:hover,
-.project:focus {
+.project-link {
+    text-decoration: none;
+    color: var(--brand-color);
+    display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
   cursor: pointer;
+  color: var(--brand-color);
 }
 
 .portfolio {
